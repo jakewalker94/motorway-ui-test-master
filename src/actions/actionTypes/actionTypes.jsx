@@ -1,6 +1,6 @@
 export const fullScreenStateAction = (fullScreen, image) => {
     return {
-        type: 'images/fullscreen',
+        type: "images/fullscreen",
         fullScreen: fullScreen,
         image: image,
     }
@@ -8,7 +8,7 @@ export const fullScreenStateAction = (fullScreen, image) => {
 
 export const formStateAction = (submitState) => {
     return {
-        type: 'forms/exampleForm',
+        type: "forms/exampleForm",
         submitState: submitState,
     }
 }

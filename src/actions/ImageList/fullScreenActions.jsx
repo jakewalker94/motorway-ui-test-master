@@ -7,15 +7,15 @@ export const openFullScreen = (image, dispatch, fullScreenState) => {
 
 // close modal
 export const closeFullScreen = (e, dispatch, fullScreenState) => {
-    const modal = e.target.closest('.modal');
-    modal.classList.remove('open');
+    const modal = e.target.closest(".modal");
+    modal.classList.remove("open");
     setTimeout(function(){
-        fullScreenState.fullScreen && dispatch(fullScreenStateAction(false, ''));
+        fullScreenState.fullScreen && dispatch(fullScreenStateAction(false, ""));
     }, 500);
 }
 
 // init modal
 export const initFullScreen = (e) => {
-    const modal = e.target.closest('.modal');
-    modal.classList.add('open');
+    const modal = e.target.closest(".modal");
+    modal.classList.add("open");
 }

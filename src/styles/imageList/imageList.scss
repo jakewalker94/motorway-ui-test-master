@@ -21,10 +21,7 @@
     margin-bottom: 20px;
     display: inline-block;
     overflow: hidden;
-    transform:
-    perspective(900px)
-    rotateX(10deg)
-    scale(0.85);
+    transform: perspective(900px) rotateX(10deg) scale(0.85);
     filter: saturate(0.5);
     box-shadow: $card-shadow;
     transition:0.5s ease all;
@@ -111,10 +108,7 @@
 }
 
 .card:hover {
-    transform:
-      rotate(0deg)
-      scale(1)
-      translateY(10px);
+    transform: rotate(0deg) scale(1) translateY(10px);
     filter: saturate(1);
       
     .user__name {

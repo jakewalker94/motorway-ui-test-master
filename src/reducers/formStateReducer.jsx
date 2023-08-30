@@ -4,7 +4,7 @@ const initialState = {
 
 // Reducer
 export const formStateReducer = (state = initialState, action) => {
-    if (action.type === 'forms/exampleForm') {
+    if (action.type === "forms/exampleForm") {
       return {
         ...state,
         submitState: action.submitState,

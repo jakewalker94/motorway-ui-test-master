@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { useSelector, useDispatch} from 'react-redux'
-import { initFullScreen, closeFullScreen } from '../../actions/ImageList/fullScreenActions';
-import '../../styles/imageList/modals.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useSelector, useDispatch} from "react-redux";
+import { initFullScreen, closeFullScreen } from "../../actions/ImageList/fullScreenActions";
+import "../../styles/imageList/modals.scss";
 
 // fullscreen modal
 function FullScreen() {
