@@ -29,9 +29,11 @@ After this, CRA will open a tab with the app running, usually `localhost:3000`. 
 ### 1. UI development
 
 > Create a responsive UI to display the images returned by the API.
+
 I have achieved this by creating a x3 column layout, which maintains the aspect ratio of these images, and then using CSS transitional effects to create a fun UX.
 
 > Images aren't optimised and their dimensions are varied, there are .jpg and .webp versions on s3, so you will need to take this into account.
+
 I struggled to perform true 'optimisation' with the assets provided in the json file. In order to use better optimisation techniques, such as 'progressive loading', I would require a stream of images with different dimensions (like in the cars.json file), in order to serve these responsively and when needed. It is entirely possible to use NodeJS server side and even client side resizing, but attempting this leads to CORS issues due to the S3 access headers (this method takes the raw image object and converts it into a blob to then be manipulated and exported). I only leveraged lazy loading and bent the rules slightly by adding dimensions into the json file, in order to avoid content shifting. Fortunately, I could reuse all of the images from the thumnails (as these were now cached), to allow the fullscreen versions to not have to be requested again.
 
 #### Some ideas to get you started:
