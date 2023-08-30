@@ -1,0 +1,29 @@
+@import './variables';
+
+.app__header {
+    height: 80px;
+    width: 100%;
+    background: $base-color;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+
+    &_title {
+        height: 100%;
+        display: flex;
+        line-height: 35px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        color: $font-color;
+
+        img {
+            height: 45px;
+            width: auto;
+            display: inline-block;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+    }
+}
